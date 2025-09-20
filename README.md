@@ -1,0 +1,5 @@
+n this interactive code:
+	•	File selection: The code prompts for the main data file and optional log/aux files. If a SEGY file is provided and ObsPy is installed, it will use ObsPy to read it; otherwise it expects the binary .mcs format.
+	•	Parameter input: You can adjust filter frequencies, choose whether to apply advanced analysis, cleaning, and inversion, and specify which phase arrivals (P, S, or both) to use for inversion.
+	•	Interactive plots: After each major analysis step, the code generates plots. By closing a plot window (or moving past an inline plot in a notebook), the code proceeds. Thanks to mplcursors, hovering over points on line plots will show their coordinates ￼, so you can read times, amplitudes, etc., directly on the graph. (Ensure mplcursors is installed for this feature.)
+	•	Travel-time inversion: If selected, the code will perform a simplified joint P and S wave inversion for a multi-layer model. It uses automatically picked arrival times and prints the final velocity-depth model.
